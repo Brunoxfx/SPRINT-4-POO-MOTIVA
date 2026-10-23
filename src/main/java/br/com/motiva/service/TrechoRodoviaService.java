@@ -143,7 +143,6 @@ public class TrechoRodoviaService {
         this.validarNumeroColuna(alturaVegetacaoCm, "A altura da vegetacao");
     }
 
-    // KM_INICIAL, KM_FINAL e ALTURA_VEGETACAO_CM sao NUMBER(10, 2) no Oracle da Sprint 3
     private void validarNumeroColuna(Double valor, String campo) {
         if (!Double.isFinite(valor)) {
             throw new RegraNegocioException(campo + " deve ser um numero valido.");

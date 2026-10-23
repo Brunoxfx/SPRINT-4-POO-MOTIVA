@@ -5,7 +5,6 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.PositiveOrZero;
 
-// A regra "altura >= 0" (Sprint 1) fica de proposito no TrechoRodoviaService, e nao aqui.
 public record TrechoRodoviaRequest(
         @NotNull(message = "O KM inicial deve ser informado.")
         @PositiveOrZero(message = "O KM inicial nao pode ser negativo.")

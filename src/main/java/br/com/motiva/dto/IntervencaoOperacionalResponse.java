@@ -20,7 +20,6 @@ public record IntervencaoOperacionalResponse(Long id, String tipo, String nomeIn
                 equipe != null ? equipe.getNome() : null);
     }
 
-    // Nomes legiveis das subclasses da Sprint 2 (RocadaManual, RocadaMecanizada, Pulverizacao)
     private static String obterNomeIntervencao(String tipo) {
         if (IntervencaoOperacional.TIPO_ROCADA_MANUAL.equals(tipo)) {
             return "Rocada manual";

@@ -87,7 +87,6 @@ public class EquipeManutencaoService {
         this.equipeRepository.delete(equipe);
     }
 
-    // Limites das colunas NOME e ESPECIALIDADE VARCHAR2(100) e QUANTIDADE_INTEGRANTES NUMBER(3) da Sprint 3
     private void validar(EquipeManutencaoRequest requisicao) {
         if (requisicao.nome() == null || requisicao.nome().trim().isEmpty()) {
             throw new RegraNegocioException("O nome da equipe deve ser informado.");
